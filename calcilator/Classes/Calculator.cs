@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace calcilator
+﻿namespace calcilator.Classes
 {
     class Calculator
     {
@@ -47,7 +45,7 @@ namespace calcilator
 
         static public double sqrt(double a)
         {
-            return Math.Sqrt(a);
+            return System.Math.Sqrt(a);
             /*if (a < 0) return -1;
             for (int i = 0; i < a / 2; i++)
             {

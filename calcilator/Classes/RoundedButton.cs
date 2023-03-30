@@ -1,16 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing.Drawing2D;
+﻿using System.Drawing.Drawing2D;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace calcilator
+namespace calcilator.Classes
 {
-    public class RoundedButton : Button
+    internal class RoundedButton : Button
     {
+
+        public static string setLabelName(string Name) { return $"Новое название: {Name}"; }
+
         public Color BorderColor { get; set; }
         public float BorderWidth { get; set; }
 

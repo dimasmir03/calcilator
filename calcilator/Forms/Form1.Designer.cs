@@ -1,6 +1,5 @@
 ﻿
-using System.Runtime.CompilerServices;
-
+using calcilator.Classes;
 namespace calcilator
 {
     partial class Form1
@@ -33,25 +32,26 @@ namespace calcilator
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonPow = new calcilator.RoundedButton();
-            this.buttonSqrt = new calcilator.RoundedButton();
-            this.button17 = new calcilator.RoundedButton();
-            this.button16 = new calcilator.RoundedButton();
-            this.button8 = new calcilator.RoundedButton();
-            this.button4 = new calcilator.RoundedButton();
-            this.button1 = new calcilator.RoundedButton();
-            this.button2 = new calcilator.RoundedButton();
-            this.button11 = new calcilator.RoundedButton();
-            this.button10 = new calcilator.RoundedButton();
-            this.button14 = new calcilator.RoundedButton();
-            this.button13 = new calcilator.RoundedButton();
-            this.button12 = new calcilator.RoundedButton();
-            this.button0 = new calcilator.RoundedButton();
-            this.button6 = new calcilator.RoundedButton();
-            this.button3 = new calcilator.RoundedButton();
-            this.button9 = new calcilator.RoundedButton();
-            this.button5 = new calcilator.RoundedButton();
-            this.button7 = new calcilator.RoundedButton();
+            this.buttonPow = new calcilator.Classes.RoundedButton();
+            this.buttonSqrt = new calcilator.Classes.RoundedButton();
+            this.button17 = new calcilator.Classes.RoundedButton();
+            this.button16 = new calcilator.Classes.RoundedButton();
+            this.button8 = new calcilator.Classes.RoundedButton();
+            this.button4 = new calcilator.Classes.RoundedButton();
+            this.button1 = new calcilator.Classes.RoundedButton();
+            this.button2 = new calcilator.Classes.RoundedButton();
+            this.button11 = new calcilator.Classes.RoundedButton();
+            this.button10 = new calcilator.Classes.RoundedButton();
+            this.button14 = new calcilator.Classes.RoundedButton();
+            this.button13 = new calcilator.Classes.RoundedButton();
+            this.button12 = new calcilator.Classes.RoundedButton();
+            this.button0 = new calcilator.Classes.RoundedButton();
+            this.button6 = new calcilator.Classes.RoundedButton();
+            this.button3 = new calcilator.Classes.RoundedButton();
+            this.button9 = new calcilator.Classes.RoundedButton();
+            this.button5 = new calcilator.Classes.RoundedButton();
+            this.button7 = new calcilator.Classes.RoundedButton();
+            this.lName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -62,7 +62,7 @@ namespace calcilator
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(385, 114);
+            this.textBox1.Size = new System.Drawing.Size(385, 190);
             this.textBox1.TabIndex = 15;
             // 
             // label1
@@ -81,7 +81,7 @@ namespace calcilator
             this.buttonPow.BorderColor = System.Drawing.SystemColors.Control;
             this.buttonPow.BorderWidth = 6F;
             this.buttonPow.Font = new System.Drawing.Font("Lucida Console", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonPow.Location = new System.Drawing.Point(330, 284);
+            this.buttonPow.Location = new System.Drawing.Point(330, 360);
             this.buttonPow.Margin = new System.Windows.Forms.Padding(4);
             this.buttonPow.Name = "buttonPow";
             this.buttonPow.Size = new System.Drawing.Size(70, 66);
@@ -94,7 +94,7 @@ namespace calcilator
             this.buttonSqrt.BorderColor = System.Drawing.SystemColors.Control;
             this.buttonSqrt.BorderWidth = 6F;
             this.buttonSqrt.Font = new System.Drawing.Font("Lucida Console", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonSqrt.Location = new System.Drawing.Point(331, 354);
+            this.buttonSqrt.Location = new System.Drawing.Point(331, 430);
             this.buttonSqrt.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSqrt.Name = "buttonSqrt";
             this.buttonSqrt.Size = new System.Drawing.Size(70, 66);
@@ -107,7 +107,7 @@ namespace calcilator
             this.button17.BorderColor = System.Drawing.SystemColors.Control;
             this.button17.BorderWidth = 6F;
             this.button17.Font = new System.Drawing.Font("Lucida Console", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button17.Location = new System.Drawing.Point(173, 359);
+            this.button17.Location = new System.Drawing.Point(173, 435);
             this.button17.Margin = new System.Windows.Forms.Padding(4);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(71, 66);
@@ -120,7 +120,7 @@ namespace calcilator
             this.button16.BorderColor = System.Drawing.SystemColors.Control;
             this.button16.BorderWidth = 6F;
             this.button16.Font = new System.Drawing.Font("Lucida Console", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button16.Location = new System.Drawing.Point(330, 211);
+            this.button16.Location = new System.Drawing.Point(330, 287);
             this.button16.Margin = new System.Windows.Forms.Padding(4);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(71, 66);
@@ -133,7 +133,7 @@ namespace calcilator
             this.button8.BorderColor = System.Drawing.SystemColors.Control;
             this.button8.BorderWidth = 6F;
             this.button8.Font = new System.Drawing.Font("Lucida Console", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button8.Location = new System.Drawing.Point(93, 137);
+            this.button8.Location = new System.Drawing.Point(93, 213);
             this.button8.Margin = new System.Windows.Forms.Padding(4);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(72, 66);
@@ -146,7 +146,7 @@ namespace calcilator
             this.button4.BorderColor = System.Drawing.SystemColors.Control;
             this.button4.BorderWidth = 6F;
             this.button4.Font = new System.Drawing.Font("Lucida Console", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Location = new System.Drawing.Point(16, 210);
+            this.button4.Location = new System.Drawing.Point(16, 286);
             this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(69, 66);
@@ -159,7 +159,7 @@ namespace calcilator
             this.button1.BorderColor = System.Drawing.SystemColors.Control;
             this.button1.BorderWidth = 6F;
             this.button1.Font = new System.Drawing.Font("Lucida Console", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(16, 284);
+            this.button1.Location = new System.Drawing.Point(16, 360);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(69, 66);
@@ -172,7 +172,7 @@ namespace calcilator
             this.button2.BorderColor = System.Drawing.SystemColors.Control;
             this.button2.BorderWidth = 6F;
             this.button2.Font = new System.Drawing.Font("Lucida Console", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(93, 285);
+            this.button2.Location = new System.Drawing.Point(93, 361);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(72, 66);
@@ -185,7 +185,7 @@ namespace calcilator
             this.button11.BorderColor = System.Drawing.SystemColors.Control;
             this.button11.BorderWidth = 6F;
             this.button11.Font = new System.Drawing.Font("Lucida Console", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button11.Location = new System.Drawing.Point(252, 137);
+            this.button11.Location = new System.Drawing.Point(252, 213);
             this.button11.Margin = new System.Windows.Forms.Padding(4);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(70, 66);
@@ -198,7 +198,7 @@ namespace calcilator
             this.button10.BorderColor = System.Drawing.SystemColors.Control;
             this.button10.BorderWidth = 6F;
             this.button10.Font = new System.Drawing.Font("Lucida Console", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button10.Location = new System.Drawing.Point(330, 137);
+            this.button10.Location = new System.Drawing.Point(330, 213);
             this.button10.Margin = new System.Windows.Forms.Padding(4);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(71, 66);
@@ -211,7 +211,7 @@ namespace calcilator
             this.button14.BorderColor = System.Drawing.SystemColors.Control;
             this.button14.BorderWidth = 6F;
             this.button14.Font = new System.Drawing.Font("Lucida Console", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button14.Location = new System.Drawing.Point(252, 359);
+            this.button14.Location = new System.Drawing.Point(252, 435);
             this.button14.Margin = new System.Windows.Forms.Padding(4);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(70, 66);
@@ -224,7 +224,7 @@ namespace calcilator
             this.button13.BorderColor = System.Drawing.SystemColors.Control;
             this.button13.BorderWidth = 6F;
             this.button13.Font = new System.Drawing.Font("Lucida Console", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button13.Location = new System.Drawing.Point(252, 285);
+            this.button13.Location = new System.Drawing.Point(252, 361);
             this.button13.Margin = new System.Windows.Forms.Padding(4);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(70, 66);
@@ -237,7 +237,7 @@ namespace calcilator
             this.button12.BorderColor = System.Drawing.SystemColors.Control;
             this.button12.BorderWidth = 6F;
             this.button12.Font = new System.Drawing.Font("Lucida Console", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button12.Location = new System.Drawing.Point(252, 210);
+            this.button12.Location = new System.Drawing.Point(252, 286);
             this.button12.Margin = new System.Windows.Forms.Padding(4);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(70, 66);
@@ -250,7 +250,7 @@ namespace calcilator
             this.button0.BorderColor = System.Drawing.SystemColors.Control;
             this.button0.BorderWidth = 6F;
             this.button0.Font = new System.Drawing.Font("Lucida Console", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button0.Location = new System.Drawing.Point(93, 359);
+            this.button0.Location = new System.Drawing.Point(93, 435);
             this.button0.Margin = new System.Windows.Forms.Padding(4);
             this.button0.Name = "button0";
             this.button0.Size = new System.Drawing.Size(72, 66);
@@ -263,7 +263,7 @@ namespace calcilator
             this.button6.BorderColor = System.Drawing.SystemColors.Control;
             this.button6.BorderWidth = 6F;
             this.button6.Font = new System.Drawing.Font("Lucida Console", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button6.Location = new System.Drawing.Point(173, 211);
+            this.button6.Location = new System.Drawing.Point(173, 287);
             this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(71, 66);
@@ -276,7 +276,7 @@ namespace calcilator
             this.button3.BorderColor = System.Drawing.SystemColors.Control;
             this.button3.BorderWidth = 6F;
             this.button3.Font = new System.Drawing.Font("Lucida Console", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(173, 285);
+            this.button3.Location = new System.Drawing.Point(173, 361);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(71, 66);
@@ -289,7 +289,7 @@ namespace calcilator
             this.button9.BorderColor = System.Drawing.SystemColors.Control;
             this.button9.BorderWidth = 6F;
             this.button9.Font = new System.Drawing.Font("Lucida Console", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button9.Location = new System.Drawing.Point(173, 137);
+            this.button9.Location = new System.Drawing.Point(173, 213);
             this.button9.Margin = new System.Windows.Forms.Padding(4);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(71, 66);
@@ -302,7 +302,7 @@ namespace calcilator
             this.button5.BorderColor = System.Drawing.SystemColors.Control;
             this.button5.BorderWidth = 6F;
             this.button5.Font = new System.Drawing.Font("Lucida Console", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button5.Location = new System.Drawing.Point(93, 211);
+            this.button5.Location = new System.Drawing.Point(93, 287);
             this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(72, 66);
@@ -315,7 +315,7 @@ namespace calcilator
             this.button7.BorderColor = System.Drawing.SystemColors.Control;
             this.button7.BorderWidth = 6F;
             this.button7.Font = new System.Drawing.Font("Lucida Console", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button7.Location = new System.Drawing.Point(16, 137);
+            this.button7.Location = new System.Drawing.Point(16, 213);
             this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(69, 66);
@@ -323,12 +323,22 @@ namespace calcilator
             this.button7.Text = "7";
             this.button7.UseVisualStyleBackColor = true;
             // 
+            // lName
+            // 
+            this.lName.AutoSize = true;
+            this.lName.BackColor = System.Drawing.Color.Transparent;
+            this.lName.Location = new System.Drawing.Point(35, 153);
+            this.lName.Name = "lName";
+            this.lName.Size = new System.Drawing.Size(0, 16);
+            this.lName.TabIndex = 21;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(408, 433);
+            this.ClientSize = new System.Drawing.Size(408, 508);
+            this.Controls.Add(this.lName);
             this.Controls.Add(this.buttonPow);
             this.Controls.Add(this.buttonSqrt);
             this.Controls.Add(this.label1);
@@ -360,27 +370,28 @@ namespace calcilator
 
         #endregion
 
-        private calcilator.RoundedButton button7;
-        private calcilator.RoundedButton button5;
-        private calcilator.RoundedButton button9;
-        private calcilator.RoundedButton button3;
-        private calcilator.RoundedButton button6;
-        private calcilator.RoundedButton button0;
-        private calcilator.RoundedButton button12;
-        private calcilator.RoundedButton button13;
-        private calcilator.RoundedButton button14;
-        private calcilator.RoundedButton button10;
-        private calcilator.RoundedButton button11;
-        private calcilator.RoundedButton button2;
-        private calcilator.RoundedButton button1;
-        private calcilator.RoundedButton button4;
-        private calcilator.RoundedButton button8;
+        private RoundedButton button7;
+        private RoundedButton button5;
+        private RoundedButton button9;
+        private RoundedButton button3;
+        private RoundedButton button6;
+        private RoundedButton button0;
+        private RoundedButton button12;
+        private RoundedButton button13;
+        private RoundedButton button14;
+        private RoundedButton button10;
+        private RoundedButton button11;
+        private RoundedButton button2;
+        private RoundedButton button1;
+        private RoundedButton button4;
+        private RoundedButton button8;
         private System.Windows.Forms.TextBox textBox1;
-        private calcilator.RoundedButton button16;
-        private calcilator.RoundedButton button17;
+        private RoundedButton button16;
+        private RoundedButton button17;
         private System.Windows.Forms.Label label1;
-        private RoundedButton buttonSqrt;
-        private RoundedButton buttonPow;
+        private Classes.RoundedButton buttonSqrt;
+        private Classes.RoundedButton buttonPow;
+        private System.Windows.Forms.Label lName;
     }
 }
 

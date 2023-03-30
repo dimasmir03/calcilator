@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using calcilator.Classes;
 
 namespace calcilator
 {
@@ -32,7 +33,15 @@ namespace calcilator
                     Controls[i].Click += new EventHandler(bPow_Click);
                 if (Controls[i].Name.Contains("buttonSqrt"))
                     Controls[i].Click += new EventHandler(bSqrt_Click);
+
+                Controls[i].Click += new EventHandler(button_clicked);
             }
+        }
+
+        private void button_clicked(object sender, EventArgs e)
+        {
+            RoundedButton button_clicked = (RoundedButton)sender;
+            lName.Text = RoundedButton.setLabelName(button_clicked.Name);
         }
 
         private void button13_Click(object sender, EventArgs e)
