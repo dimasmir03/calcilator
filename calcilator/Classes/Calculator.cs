@@ -42,16 +42,17 @@
         {
             return a * a;
         }
-
-        static public double sqrt(double a)
+        static public double sqrt(double number)
         {
-            return System.Math.Sqrt(a);
-            /*if (a < 0) return -1;
-            for (int i = 0; i < a / 2; i++)
+            double t;
+            double squareRoot = number / 2;
+            do
             {
-                if (i * i == a) return i;
-            }
-            return -1;*/
+                t = squareRoot;
+                squareRoot = (t + (number / t)) / 2;
+            } while ((t - squareRoot) != 0);
+
+            return squareRoot;
         }
     }
 }
